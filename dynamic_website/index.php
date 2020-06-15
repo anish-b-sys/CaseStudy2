@@ -13,30 +13,34 @@
 </head>
 <body onload="invoice()">
 
+<?php
+include_once "header.php";
+?>
+
 <!--header-->
-<div id = "headingBar">
+<!--<div id = "headingBar">-->
 <!--Cart menu-->
-    <div id ="cartIcon">
+<!--    <div id ="cartIcon">-->
 <!--        <img src="images/icons/shoppingCartIcon.png" id = 'rotateImg'/>-->
-
-        <div id="cartMenu"><p>Checkout</p>
-            <div id = cartList></div>
-
-            <button id="checkout">Checkout</button>
-            <div id="invoicePage">
-                <div id = "invoiceContent">Invoice:</div>
-            </div>
-
-        </div>
-    </div>
-
+<!---->
+<!--        <div id="cartMenu"><p>Checkout</p>-->
+<!--            <div id = cartList></div>-->
+<!---->
+<!--            <button id="checkout">Checkout</button>-->
+<!--            <div id="invoicePage">-->
+<!--                <div id = "invoiceContent">Invoice:</div>-->
+<!--            </div>-->
+<!---->
+<!--        </div>-->
+<!--    </div>-->
+<!---->
 <!--    <div id="accountIcon"><img src="images/icons/accountIcon.png"/></div>-->
-
+<!---->
 <!--    <div id="callIcon"><img src="images/icons/callIcon.png"/></div>-->
-
+<!---->
 <!--    <a href ="index.php"><img src="images/logo.png" id = "logo" /></a>-->
-
-</div>
+<!---->
+<!--</div>-->
 
 
 <!--<img src="images/headingImage.jpg" id ="headingImg"/>-->
