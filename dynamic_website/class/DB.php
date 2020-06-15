@@ -2,10 +2,10 @@
 
 class DB
 {
-    private $server = "dno6xji1n8fm828n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-    private $user = "frn8ql19w9jrd0hy";
-    private $pwd = "uvsw3rnopxb2uxq2";
-    private $database = "eq8apmg97080j54s";
+    private $server = "hcm4e9frmbwfez47.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+    private $user = "fg50iy6ghhy58wsx";
+    private $pwd = "p8330fkwj27gaiif";
+    private $database = "kz46l2erzjmr1run";
     public $connection;
 
     /**
