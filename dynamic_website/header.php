@@ -1,7 +1,7 @@
 <div id = "headingBar">
     <!--Cart menu-->
     <div id ="cartIcon">
-        <!--        <img src="images/icons/shoppingCartIcon.png" id = 'rotateImg'/>-->
+                <img src="images/icons/shoppingCartIcon.png" id = 'rotateImg'/>
 
         <div id="cartMenu"><p>Checkout</p>
             <div id = cartList></div>

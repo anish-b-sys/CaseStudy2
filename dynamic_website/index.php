@@ -43,19 +43,21 @@ include_once "header.php";
 <!--</div>-->
 
 
-<!--<img src="images/headingImage.jpg" id ="headingImg"/>-->
-
+<img src="images/headingImage.jpg" id ="headingImg"/>
+<?php
+include_once "products.php";
+?>
 <!--all alligned categories-->
-<div id = "categories">
-    <ul>
+<!--<div id = "categories">-->
+<!--    <ul>-->
 <!--        <li><a href="dogFood.html"><img src="images/products/dog.png"/></a></li>-->
 <!--        <li><a href="catFood.html"><img src="images/categories/cat.png"/></a></li>-->
 <!--        <li><a href="birdFood.html"><img src="images/categories/bird.png"/></a></li>-->
 <!--        <li><a href="fishFood.html"><img src="images/categories/fish.png"/></a></li>-->
 <!--        <li><a href="smallAnimalFood.html"><img src="images/categories/smallAnimal.png"/></a></li>-->
 <!--        <li><a href="reptileFood.html"><img src="images/categories/reptile.png"/></a></li>-->
-    </ul>
-</div>
+<!--    </ul>-->
+<!--</div>-->
 <!--simple advertisements-->
 <div id="promo">
     <ul>
