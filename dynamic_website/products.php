@@ -7,8 +7,8 @@
         $i = 0;
         while ($i < sizeof($categories)){
             $category = $categories[$i];
-            echo "<li><a href='products.php?categoryID=".$category->id."'><img src =".$category->picture."/></a></li>";
-            echo "<a>Hello $category->picture</a>";
+            echo "<li><a href='products.php?categoryID=".$category->id."'><img src =$category->picture/></a></li>";
+//            echo "<a>Hello $category->picture</a>";
             $i = $i + 1;
         }
         ?>
