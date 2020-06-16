@@ -17,60 +17,21 @@
 include_once "header.php";
 ?>
 
-<!--header-->
-<!--<div id = "headingBar">-->
-<!--Cart menu-->
-<!--    <div id ="cartIcon">-->
-<!--        <img src="images/icons/shoppingCartIcon.png" id = 'rotateImg'/>-->
-<!---->
-<!--        <div id="cartMenu"><p>Checkout</p>-->
-<!--            <div id = cartList></div>-->
-<!---->
-<!--            <button id="checkout">Checkout</button>-->
-<!--            <div id="invoicePage">-->
-<!--                <div id = "invoiceContent">Invoice:</div>-->
-<!--            </div>-->
-<!---->
-<!--        </div>-->
-<!--    </div>-->
-<!---->
-<!--    <div id="accountIcon"><img src="images/icons/accountIcon.png"/></div>-->
-<!---->
-<!--    <div id="callIcon"><img src="images/icons/callIcon.png"/></div>-->
-<!---->
-<!--    <a href ="index.php"><img src="images/logo.png" id = "logo" /></a>-->
-<!---->
-<!--</div>-->
-
-
 <img src="images/headingImage.jpg" id ="headingImg"/>
+
 <?php
 include_once "categories.php";
 ?>
-<!--all alligned categories-->
-<!--<div id = "categories">-->
-<!--    <ul>-->
-<!--        <li><a href="dogFood.html"><img src="images/products/dog.png"/></a></li>-->
-<!--        <li><a href="catFood.html"><img src="images/categories/cat.png"/></a></li>-->
-<!--        <li><a href="birdFood.html"><img src="images/categories/bird.png"/></a></li>-->
-<!--        <li><a href="fishFood.html"><img src="images/categories/fish.png"/></a></li>-->
-<!--        <li><a href="smallAnimalFood.html"><img src="images/categories/smallAnimal.png"/></a></li>-->
-<!--        <li><a href="reptileFood.html"><img src="images/categories/reptile.png"/></a></li>-->
-<!--    </ul>-->
-<!--</div>-->
-<!--simple advertisements-->
+
 <div id="promo">
     <ul>
-<!--       -->
-
+        <li><a><img src="images/promos/promo1.png"/></a></li>
+        <li><a><img src="images/promos/promo3 .png"/></a></li>
+        <li><a><img src="images/promos/promo2.png"/></a></li>
     </ul>
 </div>
-<!--Footer-->
-<footer id="bottom">
-    <div id = contactUS>About Us</div>
-    <div id = terms>Policy</div>
-    <div id = money>Payment Options</div>
-
-</footer>
+<?php
+include_once "footer.php";
+?>
 </body>
 </html>

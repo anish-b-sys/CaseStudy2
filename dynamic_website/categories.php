@@ -13,7 +13,7 @@
 //            categoryID=".$category->id."
 //            echo "<li>"
             echo "<li> <a href = 'products.php?categoryID=".$category->id."'><img src = ".$category->picture."/></a></li>";
-//            echo "<a>Hello $category->picture</a>";
+            echo $categoryID;
             $i = $i + 1;
         }
         ?>

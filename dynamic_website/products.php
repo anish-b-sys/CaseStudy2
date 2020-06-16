@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/styles.css">
+
 <?php
 include_once "header.php";
 ?>
