@@ -34,9 +34,12 @@ include_once "footer.php";
                 echo "<p>$categoryID</p>";
                 $products = $user->showProductsByCategory($categoryID);
                 $i = 0;
-                while ($i<sizeof($products)){
+                echo "<p>$i</p>";
+
+            while ($i<sizeof($products)){
+                echo "<p>$i</p>";
                     $product = $products[$i];
-                    echo "<p>$product</p>";
+                echo "<p>$product</p>";
             ?>
                     <img src="<?php echo $product->image;?>"/>
                     <p>"<?php echo $product->name; ?>"</p>
