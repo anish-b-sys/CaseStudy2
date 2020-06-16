@@ -10,7 +10,7 @@
 //            echo "<li><a href='products.php?'><img src =".$category->picture."/></a></li>";
 //            categoryID=".$category->id."
 //            echo "<li>"
-            echo "<li> <a href = 'index.php?'> <img src = ".$category->picture." /> </a> </li>";
+            echo "<li> <a href = 'index.php?categoryID=".$category->id."'><img src = ".$category->picture."/></a></li>";
 //            echo "<a>Hello $category->picture</a>";
             $i = $i + 1;
         }
@@ -23,4 +23,3 @@
         <!--        <li><a href="reptileFood.html"><img src="images/categories/reptile.png"/></a></li>-->
     </ul>
 </div>
-<img src=/>
