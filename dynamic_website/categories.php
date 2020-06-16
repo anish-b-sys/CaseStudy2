@@ -1,5 +1,5 @@
 
-<!--<link rel="stylesheet" href="css/styles.css">-->
+<link rel="stylesheet" href="css/styles.css">
 <div id = "categories">
     <ul>
         <?php
