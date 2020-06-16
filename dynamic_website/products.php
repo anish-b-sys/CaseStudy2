@@ -17,6 +17,14 @@
 include_once "header.php";
 ?>
 
+<?php
+include_once "categories.php";
+?>
+
+<?php
+include_once "footer.php";
+?>
+
 <div id = "catDivContainer">
     <div id = 'catDiv'>
         <ul>
@@ -26,9 +34,8 @@ include_once "header.php";
                 $i = 0;
                 while ($i<sizeof($products)){
                     $product = $products[$i];
+                    echo "<p>$product</p>";
             ?>
-
-                <li>
                     <img src="<?php echo $product->image;?>"/>
                     <p>"<?php echo $product->name; ?>"</p>
                     <p> = "Price: $<?php echo $product->price; ?>"</p>
@@ -36,7 +43,6 @@ include_once "header.php";
                     <button name="<?php echo $product->name; ?>"
                             price = "<?php echo $product->price; ?>"
                             onclick="addProductToCart(this)">Add to cart</button>
-                </li>
             <?php
             $i = $i + 1;
             }
@@ -45,9 +51,7 @@ include_once "header.php";
     </div>
 </div>
 
-<?php
-include_once "footer.php";
-?>
+
 
 </body>
 </html>
