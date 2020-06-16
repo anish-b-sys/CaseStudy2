@@ -29,7 +29,9 @@ include_once "footer.php";
     <div id = 'catDiv'>
         <ul>
             <?php
+                echo "<p>working here</p>";
                 $categoryID = $_GET["categoryID"];
+                echo "<p>$categoryID</p>";
                 $products = $user->showProductsByCategory($categoryID);
                 $i = 0;
                 while ($i<sizeof($products)){
