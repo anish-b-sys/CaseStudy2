@@ -1,5 +1,3 @@
-
-<link rel="stylesheet" href="css/styles.css">
 <div id = "categories">
     <ul>
         <?php
@@ -9,11 +7,7 @@
         $i = 0;
         while ($i < sizeof($categories)){
             $category = $categories[$i];
-//            echo "<li><a href='products.php?'><img src =".$category->picture."/></a></li>";
-//            categoryID=".$category->id."
-//            echo "<li>"
-            echo "<li> <a href = 'products.php?categoryID=".$category->id."'><img src = ".$category->picture."/></a></li>";
-//            echo $categoryID;
+            echo "<li><a href = 'products.php?categoryID=".$category->id."'><img src = ".$category->picture."/></a></li>";
             $i = $i + 1;
         }
         ?>

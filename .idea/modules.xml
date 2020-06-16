@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CaseStudy2.iml" filepath="$PROJECT_DIR$/.idea/CaseStudy2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../example/.idea/HTCS5606S12020PHP.iml" filepath="$PROJECT_DIR$/../example/.idea/HTCS5606S12020PHP.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../ex2/.idea/ex2.iml" filepath="$PROJECT_DIR$/../ex2/.idea/ex2.iml" />
     </modules>
   </component>
 </project>

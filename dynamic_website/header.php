@@ -1,6 +1,3 @@
-<link rel="stylesheet" href="css/styles.css">
-
-
 <div id = "headingBar">
     <!--Cart menu-->
     <div id ="cartIcon">
@@ -18,9 +15,7 @@
     </div>
 
         <div id="accountIcon"><img src="images/icons/accountIcon.png"/></div>
-
         <div id="callIcon"><img src="images/icons/callIcon.png"/></div>
-
         <a href ="index.php"><img src="images/logo.png" id = "logo" /></a>
 
 </div>
