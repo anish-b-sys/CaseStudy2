@@ -1,3 +1,5 @@
+
+
 <div id = "headingBar">
     <!--Cart menu-->
     <div id ="cartIcon">

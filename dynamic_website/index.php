@@ -45,7 +45,7 @@ include_once "header.php";
 
 <img src="images/headingImage.jpg" id ="headingImg"/>
 <?php
-include_once "products.php";
+include_once "categories.php";
 ?>
 <!--all alligned categories-->
 <!--<div id = "categories">-->
