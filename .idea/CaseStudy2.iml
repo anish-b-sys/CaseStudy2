@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="HTCS5606S12020PHP" />
+    <orderEntry type="module" module-name="ex2" />
   </component>
 </module>
