@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Class User
+ *  Author: Anish Bhalla
+ *  Date: 15-06-2020
+ *  version: 1
+ */
 include_once "DB.php";
 include_once "Category.php";
 include_once "Product.php";

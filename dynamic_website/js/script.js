@@ -1,6 +1,6 @@
 
 total = 0 //total price will show in my invoice
-//localStorge
+
 //add product to cart
 function addProductToCart(e) {
     cart = $("#cartList");
@@ -8,12 +8,12 @@ function addProductToCart(e) {
     price = $(e).attr("price");
     qty = $(e).prev().val();
 
-    productTotal = Math.round((price)*Number(qty) * 100) / 100;
+    productTotal = Math.round((price)*Number(qty) * 100) / 100; // rounds to 2 d.p
 
-    cart.append("<p>Name: "+name1+"</p>");
+    cart.append("<p>Name: "+name1+"</p>"); // seperates name /price + qty
     cart.append("<p>Price: $"+ productTotal +" Quantity: "+qty+"</p>");
     total = Math.round((total + Number(price)*Number(qty)) * 100) / 100;
-    rotateCart()
+    rotateCart() // cart trigger
 }
 
 //Popup Invoice
@@ -24,7 +24,7 @@ function invoice() {
     $("#invoiceContent").empty();
     $("#invoiceContent").append($("#cartList").children());
 
-    if (total > 300){
+    if (total > 300){ // shipping cost trigger
         $("#invoiceContent").append("<p>Shipping cost: $0</p>");
     }
     else if(total <=300){
@@ -81,9 +81,11 @@ function rotateCart() {
     }
 }
 
+
+//jQuery animations
 function moveRight(){ // right
-    $('#move').animate({right:'30%'}, 1000, moveLeft); //left
+    $('#move').animate({right:'30%'}, 1000, moveLeft);
 }
 function moveLeft(){// left
-    $('#move').animate({right:'89%'}, 1000, moveRight); // right
+    $('#move').animate({right:'89%'}, 1000, moveRight);
 }

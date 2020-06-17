@@ -1,13 +1,10 @@
-
 <?php
-
 /**
  * Class Category
  *  Author: Anish Bhalla
- *  Date: 09-06-2020
+ *  Date: 15-06-2020
  *  version: 1
  */
-
 
 class Category
 {

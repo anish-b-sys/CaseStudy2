@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Class DB
+ *  Author: Anish Bhalla
+ *  Date: 15-06-2020
+ *  version: 1
+ */
 class DB
 {
     private $server = "hcm4e9frmbwfez47.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";

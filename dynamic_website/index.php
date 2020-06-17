@@ -13,7 +13,7 @@
 </head>
 
 <?php
-include_once "header.php";
+include_once "header.php"; // retrieves header.php
 ?>
 
 <img src="images/headingImage.jpg" id ="headingImg"/>

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
-<!--<body onload="invoice()">-->
 
 <?php
 include_once "header.php";
@@ -25,12 +24,14 @@ include_once "categories.php";
     <div id = 'catDiv'>
         <ul>
             <?php
+//            Gets product from category ID
                 $categoryID = $_GET["categoryID"];
                 $products = $user->showProductsByCategory($categoryID);
                 $i = 0;
                 while ($i<sizeof($products)){
                     $product = $products[$i];
             ?>
+                    <!--Store DB info-->
                     <li>
                     <img src="<?php echo $product->image;?>"/>
                     <p><?php echo $product->name; ?></p>
