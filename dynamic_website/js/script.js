@@ -8,7 +8,7 @@ function addProductToCart(e) {
     price = $(e).attr("price");
     qty = $(e).prev().val();
 
-    cart.append("<p>Name: "+name1+"  Price: "+Number(price)*Number(qty) +"</p>");
+    cart.append("<p>Name: "+name1+"  Price: $"+Number(price)*Number(qty) +"</p>");
     total = total + Number(price)*Number(qty);
     rotateCart()
 }
@@ -16,24 +16,24 @@ function addProductToCart(e) {
 //Popup Invoice
 
 function invoice() {
-    modal = document.getElementById("myModal");
-    modal.style.display = "block";
-    // Get the <span> element that closes the modal
-    cross = document.getElementsByClassName("close")[0];
-    console.log(cross);
-    cross.onclick = function() {
-        modal.style.display = "none";
-    }
-// When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+//     checkout = document.getElementById("myModal");
+//     modal.style.display = "block";
+//     // Get the <span> element that closes the modal
+//     cross = document.getElementsByClassName("close")[0];
+//     console.log(cross);
+//     cross.onclick = function() {
+//         modal.style.display = "none";
+//     }
+// // When the user clicks anywhere outside of the modal, close it
+//     window.onclick = function(event) {
+//         if (event.target == modal) {
+//             modal.style.display = "none";
+//         }
+//     }
     //Take everything from shopping cart
-    $("#invoicePlace").empty();
-    $("#invoicePlace").append($("#rightDiv").children());
-    $("#invoicePlace").append("<p>Total: "+total+"</p>");
+    $("#invoiceContent").empty();
+    $("#invoiceContent").append($("#cartList").children());
+    $("#invoiceContent").append("<p>Total: "+total+"</p>");
 
 }
 

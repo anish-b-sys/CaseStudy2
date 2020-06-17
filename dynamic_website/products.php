@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
-<body onload="invoice()">
+<!--<body onload="invoice()">-->
 
 <?php
 include_once "header.php";
@@ -35,7 +35,7 @@ include_once "categories.php";
                     <img src="<?php echo $product->image;?>"/>
                     <p><?php echo $product->name; ?></p>
                     <p>Price: $<?php echo $product->price;?></p>
-                    <input placeholder="qty" type = number>
+                    <input placeholder="quantity" type = number>
                     <button name="<?php echo $product->name; ?>"
                             price = "<?php echo $product->price; ?>"
                             onclick="addProductToCart(this)">Add to cart</button>

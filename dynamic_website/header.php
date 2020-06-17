@@ -6,7 +6,7 @@
         <div id="cartMenu"><p>Checkout</p>
             <div id = cartList></div>
 
-            <button id="checkout">Checkout</button>
+            <button id="checkout" onclick="invoice()">Checkout</button>
             <div id="invoicePage">
                 <div id = "invoiceContent">Invoice:</div>
             </div>
