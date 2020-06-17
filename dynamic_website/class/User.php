@@ -62,8 +62,6 @@ class User
                 $product = new Product($row["id"], $row["name"], $row["price"], $row['image'],$row["categoryID"]);
                 array_push($products,$product);
             }
-            echo "<a>$products</a>";
-
         }
         $conn->close();
         return $products;
