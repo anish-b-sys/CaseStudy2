@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
-<body onload="invoice()">
 
 <?php
 include_once "header.php";

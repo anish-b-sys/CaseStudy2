@@ -180,5 +180,15 @@ body
 
 }
 
+#about{
+    white-space: pre-wrap;
+    text-align: center;
+    font-size: 25px;
+}
 
+#move{
+    border-radius: 50%;
+    width: 5%;
+    position: absolute;
+}
 
