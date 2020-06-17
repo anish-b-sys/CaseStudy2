@@ -17,14 +17,6 @@
 include_once "header.php";
 ?>
 
-<?php
-include_once "categories.php";
-?>
-
-<?php
-include_once "footer.php";
-?>
-
 <div id = "catDivContainer">
     <div id = 'catDiv'>
         <ul>
@@ -37,9 +29,9 @@ include_once "footer.php";
             ?>
                     <li>
                     <img src="<?php echo $product->image;?>"/>
-                    <p>"<?php echo $product->name; ?>"</p>
-                    <p> = "Price: $<?php echo $product->price; ?>"</p>
-                    Qty: <input placeholder="qty" type = number>
+                    <p><?php echo $product->name; ?></p>
+                    <p>Price: $<?php echo $product->price;?></p>
+                    <input placeholder="qty" type = number>
                     <button name="<?php echo $product->name; ?>"
                             price = "<?php echo $product->price; ?>"
                             onclick="addProductToCart(this)">Add to cart</button>
@@ -51,7 +43,13 @@ include_once "footer.php";
     </div>
 </div>
 
+<?php
+include_once "categories.php";
+?>
 
+<?php
+include_once "footer.php";
+?>
 
 </body>
 </html>
