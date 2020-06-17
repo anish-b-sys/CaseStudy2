@@ -10,7 +10,8 @@ function addProductToCart(e) {
 
     productTotal = Math.round((price)*Number(qty) * 100) / 100;
 
-    cart.append("<p>Name: "+name1+"Price: $"+ productTotal +"quantity: "+qty+"</p>");
+    cart.append("<p>Name: "+name1+"</p>");
+    cart.append("<p>Price: $"+ productTotal +" quantity: "+qty+"</p>");
     total = Math.round((total + Number(price)*Number(qty)) * 100) / 100;
     rotateCart()
 }
@@ -18,20 +19,6 @@ function addProductToCart(e) {
 //Popup Invoice
 
 function invoice() {
-//     checkout = document.getElementById("myModal");
-//     modal.style.display = "block";
-//     // Get the <span> element that closes the modal
-//     cross = document.getElementsByClassName("close")[0];
-//     console.log(cross);
-//     cross.onclick = function() {
-//         modal.style.display = "none";
-//     }
-// // When the user clicks anywhere outside of the modal, close it
-//     window.onclick = function(event) {
-//         if (event.target == modal) {
-//             modal.style.display = "none";
-//         }
-//     }
     //Take everything from shopping cart
 
     $("#invoiceContent").empty();

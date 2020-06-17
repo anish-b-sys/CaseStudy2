@@ -17,6 +17,7 @@ body
 
 #categories ul{
     border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 /*Keeps edges cleaning*/
 #categories li, #headingBar li, #promo li, #catDiv li{

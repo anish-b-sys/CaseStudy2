@@ -26,7 +26,7 @@ include_once "categories.php";
 <div id="promo">
     <ul>
         <li><a><img src="images/promos/promo1.png"/></a></li>
-        <li><a><img src="images/promos/promo3 .png"/></a></li>
+        <li><a><img src="images/promos/promo3.png"/></a></li>
         <li><a><img src="images/promos/promo2.png"/></a></li>
     </ul>
 </div>
