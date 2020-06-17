@@ -17,6 +17,10 @@
 include_once "header.php";
 ?>
 
+<?php
+include_once "categories.php";
+?>
+
 <div id = "catDivContainer">
     <div id = 'catDiv'>
         <ul>
@@ -43,9 +47,6 @@ include_once "header.php";
     </div>
 </div>
 
-<?php
-include_once "categories.php";
-?>
 
 <?php
 include_once "footer.php";
