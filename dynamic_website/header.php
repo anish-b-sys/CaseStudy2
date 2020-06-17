@@ -1,4 +1,5 @@
-<body onload="moveRight()"></body> // animation initiator / looped
+<body onload="moveRight()"></body>
+<!-- animation initiator / looped-->
 
 
 <div id = "headingBar">
