@@ -8,7 +8,9 @@ function addProductToCart(e) {
     price = $(e).attr("price");
     qty = $(e).prev().val();
 
-    cart.append("<p>Name: "+name1+"  Price: $"+Number(price)*Number(qty) +"</p>");
+    productTotal = Math.round((price)*Number(qty) * 100) / 100;
+
+    cart.append("<p>Name: "+name1+"Price: $"+ productTotal +"quantity: "+qty+"</p>");
     total = Math.round((total + Number(price)*Number(qty)) * 100) / 100;
     rotateCart()
 }
