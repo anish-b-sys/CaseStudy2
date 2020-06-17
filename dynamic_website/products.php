@@ -34,7 +34,7 @@ include_once "footer.php";
                 echo "<p>$categoryID</p>";
                 $products = $user->showProductsByCategory($categoryID);
                 $i = 0;
-                echo "<p>$products</p>";
+                echo "<p>$products[0]</p>";
                     $p = sizeof($products);
             while ($i<sizeof($products)){
                 echo "<p>$p</p>";
