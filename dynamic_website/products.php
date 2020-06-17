@@ -29,18 +29,13 @@ include_once "footer.php";
     <div id = 'catDiv'>
         <ul>
             <?php
-                echo "<p>working here</p>";
                 $categoryID = $_GET["categoryID"];
-                echo "<p>$categoryID</p>";
                 $products = $user->showProductsByCategory($categoryID);
-                $i = 1;
-                echo "<p>$products[$i]</p>";
-                    $p = sizeof($products);
-            while ($i<sizeof($products)){
-                echo "<p>$p</p>";
+                $i = 0;
+                while ($i < sizeof($products)){
                     $product = $products[$i];
-                echo "<p>$product</p>";
-            ?>
+                    ?>
+                <li>
                     <img src="<?php echo $product->image;?>"/>
                     <p>"<?php echo $product->name; ?>"</p>
                     <p> = "Price: $<?php echo $product->price; ?>"</p>
@@ -48,10 +43,9 @@ include_once "footer.php";
                     <button name="<?php echo $product->name; ?>"
                             price = "<?php echo $product->price; ?>"
                             onclick="addProductToCart(this)">Add to cart</button>
+                </li>
             <?php
-            $i = $i + 1;
-            }
-            ?>
+            $i = $i + 1;} ?>
         </ul>
     </div>
 </div>

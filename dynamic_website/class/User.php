@@ -59,10 +59,11 @@ class User
         $result = $conn->query($sql);
         if ($result->num_rows>0){
             while ($row = $result->fetch_assoc()){
-                $product = new Product($row["id"], $row["name"], $row["price"],
-                    $row['image'],$row["categoryID"]);
+                $product = new Product($row["id"], $row["name"], $row["price"], $row['image'],$row["categoryID"]);
                 array_push($products,$product);
             }
+            echo "<a>$products</a>";
+
         }
         $conn->close();
         return $products;
