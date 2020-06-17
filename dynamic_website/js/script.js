@@ -9,7 +9,7 @@ function addProductToCart(e) {
     qty = $(e).prev().val();
 
     cart.append("<p>Name: "+name1+"  Price: $"+Number(price)*Number(qty) +"</p>");
-    total = total + Number(price)*Number(qty);
+    total = Math.round((total + Number(price)*Number(qty)) * 100) / 100;
     rotateCart()
 }
 
@@ -31,10 +31,18 @@ function invoice() {
 //         }
 //     }
     //Take everything from shopping cart
+
     $("#invoiceContent").empty();
     $("#invoiceContent").append($("#cartList").children());
-    $("#invoiceContent").append("<p>Total: "+total+"</p>");
 
+    if (total > 300){
+        $("#invoiceContent").append("<p>Shipping cost: $0</p>");
+    }
+    else if(total <=300){
+        $("#invoiceContent").append("<p>Shipping cost: $5</p>");
+        total = total + 5;
+    }
+    $("#invoiceContent").append("<p>Total: "+total+"</p>");
 }
 
 

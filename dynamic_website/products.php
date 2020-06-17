@@ -35,7 +35,7 @@ include_once "categories.php";
                     <img src="<?php echo $product->image;?>"/>
                     <p><?php echo $product->name; ?></p>
                     <p>Price: $<?php echo $product->price;?></p>
-                    <input placeholder="quantity" type = number>
+                    <input placeholder="quantity" type = number min="1">
                     <button name="<?php echo $product->name; ?>"
                             price = "<?php echo $product->price; ?>"
                             onclick="addProductToCart(this)">Add to cart</button>
